@@ -80,7 +80,10 @@ public  class EJ2 {
             return lista;
         }
 
-    } */
+
+   */     
+
+    } 
 
 
     public static void main(String[] args) {
@@ -95,14 +98,14 @@ public  class EJ2 {
 
         try {
                    Peleador.guardarPeleador(peleadores, archivo);
-                    System.out.println("CSV generado en: " + archivo.getAbsolutePath());
+                    System.out.println("csv generado en:" + archivo.getAbsolutePath());
             
         } catch (Exception e) {
             e.printStackTrace();
         }
 
 
-        try {
+ /*       try {
                     List<Peleador> leidos = Peleador.leerPeleadores(archivo);
                     System.out.println("Peleadores leídos del CSV:");
                     leidos.forEach(System.out::println);
@@ -110,7 +113,10 @@ public  class EJ2 {
         } catch (Exception e) {
         e.printStackTrace();
         }
+        
+ */
     
     }
 
 }
+

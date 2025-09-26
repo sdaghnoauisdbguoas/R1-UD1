@@ -57,7 +57,7 @@ public  class EJ2 {
 
 
 
-    public static List<Peleador> leerPeleadores(File f) throws IOException {
+/*    public static List<Peleador> leerPeleadores(File f) throws IOException {
             List<Peleador> lista = new ArrayList<>();
             try (BufferedReader br = new BufferedReader(
                     new InputStreamReader(new FileInputStream(f), StandardCharsets.UTF_8))) {
@@ -80,7 +80,7 @@ public  class EJ2 {
             return lista;
         }
 
-    }
+    } */
 
 
     public static void main(String[] args) {
@@ -93,7 +93,6 @@ public  class EJ2 {
 
    File archivo = new File("peleadores.csv");
 
-        // Guardar CSV
         try {
                    Peleador.guardarPeleador(peleadores, archivo);
                     System.out.println("CSV generado en: " + archivo.getAbsolutePath());
@@ -113,4 +112,5 @@ public  class EJ2 {
         }
     
     }
+
 }
